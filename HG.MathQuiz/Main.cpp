@@ -33,6 +33,15 @@ int main()
 		quizQuestions[i] = questions[randomNumber];
 	}
 
+	int answers[NUM_QUESTIONS];
+	cout << "Welcome to your math quiz!\n\n";
+	for (int i = 0; i < NUM_QUESTIONS; i++)
+	{
+		cout << "Question " << (i + 1) << ": " << quizQuestions[i] << " = ";
+		cin >> answers[i];
+		cout << "\n";
+	}
+
 	(void)_getch();
 	return 0;
 }
