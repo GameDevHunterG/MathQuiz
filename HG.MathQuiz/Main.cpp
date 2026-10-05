@@ -42,6 +42,10 @@ int main()
 		cout << "\n";
 	}
 
+	ofstream ofs(resultsFilepath);
+	for (int i = 0; i < NUM_QUESTIONS; i++) ofs << quizQuestions[i] << " = " << answers[i] << "\n";
+	cout << "Results saved to " << resultsFileName << "\n";
+
 	(void)_getch();
 	return 0;
 }
